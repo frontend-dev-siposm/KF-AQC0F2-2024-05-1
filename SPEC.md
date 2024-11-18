@@ -65,14 +65,11 @@ Frontend:
 
 -   UI: CSS Bootstrap
 
+
+**Tervezett design**
+
 ![A képen képernyőkép, szöveg, szoftver, Multimédiás szoftver látható
 Automatikusan generált leírás](./image1.png){width="6.3in"
 height="3.3465277777777778in"}
 
-![A képen szöveg, képernyőkép, szoftver, képernyő látható Automatikusan
-generált leírás](./image2.png){width="6.3in"
-height="3.3465277777777778in"}
 
-![A képen képernyőkép, szoftver, Multimédiás szoftver, Számítógépes ikon
-látható Automatikusan generált leírás](./image3.png){width="6.3in"
-height="3.3465277777777778in"}
