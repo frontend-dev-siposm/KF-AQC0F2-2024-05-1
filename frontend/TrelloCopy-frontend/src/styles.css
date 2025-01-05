@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+/* Change the background and border color of primary buttons */
+.btn-primary {
+    background-color: blueviolet; /* Custom green background */
+    border-color: blueviolet;    /* Custom green border */
+    color: white;             /* Text color */
+}
+
+/* Change the hover state */
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: white; /* Darker green for hover */
+    border-color: blueviolet;     /* Match border with background */
+    color: blueviolet;              /* Text color on hover */
+}
+
+.btn [class^="bi "],
+.nav [class^="bi "],
+.btn [class*=" bi "],
+.nav [class*=" bi "] {
+  line-height: 0.10em;
+}
