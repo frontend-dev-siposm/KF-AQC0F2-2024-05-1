@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\SelmeciS\\Downloads\\kliens-feleves\\KF-AQC0F2-2024-05-1\\backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4E38F066-CF32-4FFB-B687-785EB4428930}|TrelloCopy\\TrelloCopy.csproj|c:\\users\\selmecis\\downloads\\kliens-feleves\\kf-aqc0f2-2024-05-1\\backend\\trellocopy\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E38F066-CF32-4FFB-B687-785EB4428930}|TrelloCopy\\TrelloCopy.csproj|solutionrelative:trellocopy\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TaskController.cs",
+              "DocumentMoniker": "C:\\Users\\SelmeciS\\Downloads\\kliens-feleves\\KF-AQC0F2-2024-05-1\\backend\\TrelloCopy\\Controllers\\TaskController.cs",
+              "RelativeDocumentMoniker": "TrelloCopy\\Controllers\\TaskController.cs",
+              "ToolTip": "C:\\Users\\SelmeciS\\Downloads\\kliens-feleves\\KF-AQC0F2-2024-05-1\\backend\\TrelloCopy\\Controllers\\TaskController.cs",
+              "RelativeToolTip": "TrelloCopy\\Controllers\\TaskController.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAwwCwAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-05T16:49:02.142Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
