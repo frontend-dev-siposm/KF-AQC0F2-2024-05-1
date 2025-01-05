@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KVygf59mRQ5zanBbPS5RdUfeUujlo4GOblj2THXERujSjUDWRhTlmuBGjjSg17jewpT8Kc3vEhSmEo5uaiLyIg==",
+  "dgSpecHash": "+XaPnRdv2CeeLzjIwpIMooQ8O6GZRQKjvKUNf88ClEqWPLcrX2JyJiIcGdMZtK8Ux3eUt/am/0F37Wa89CYE9A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\SelmeciS\\Downloads\\AQC0F2_SOF_2023242-master\\AQC0F2_SOF_2023242-master\\TrelloCopy\\TrelloCopy.csproj",
+  "projectFilePath": "C:\\Users\\SelmeciS\\Downloads\\kliens-feleves\\KF-AQC0F2-2024-05-1\\backend\\TrelloCopy\\TrelloCopy.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SelmeciS\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\SelmeciS\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

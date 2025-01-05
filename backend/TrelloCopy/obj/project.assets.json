@@ -8672,11 +8672,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SelmeciS\\Downloads\\AQC0F2_SOF_2023242-master\\AQC0F2_SOF_2023242-master\\TrelloCopy\\TrelloCopy.csproj",
+      "projectUniqueName": "C:\\Users\\SelmeciS\\Downloads\\kliens-feleves\\KF-AQC0F2-2024-05-1\\backend\\TrelloCopy\\TrelloCopy.csproj",
       "projectName": "TrelloCopy",
-      "projectPath": "C:\\Users\\SelmeciS\\Downloads\\AQC0F2_SOF_2023242-master\\AQC0F2_SOF_2023242-master\\TrelloCopy\\TrelloCopy.csproj",
+      "projectPath": "C:\\Users\\SelmeciS\\Downloads\\kliens-feleves\\KF-AQC0F2-2024-05-1\\backend\\TrelloCopy\\TrelloCopy.csproj",
       "packagesPath": "C:\\Users\\SelmeciS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SelmeciS\\Downloads\\AQC0F2_SOF_2023242-master\\AQC0F2_SOF_2023242-master\\TrelloCopy\\obj\\",
+      "outputPath": "C:\\Users\\SelmeciS\\Downloads\\kliens-feleves\\KF-AQC0F2-2024-05-1\\backend\\TrelloCopy\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\SelmeciS\\AppData\\Roaming\\NuGet\\NuGet.Config",
