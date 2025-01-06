@@ -20,3 +20,13 @@
 .nav [class*=" bi "] {
   line-height: 0.10em;
 }
+
+
+#router-outlet-container{
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    height: 100vw;
+    background-color: blueviolet;
+    color: white;
+}
