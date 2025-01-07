@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Task } from '../../../../app/task';
 import { TaskService } from '../../../../app/task.service';
 
@@ -11,7 +12,10 @@ export class TaskListComponent implements OnInit {
   tasks: Task[] = [];
   error: string = '';
 
-  constructor(private taskService: TaskService) { }
+  constructor(
+    private taskService: TaskService,
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
     this.loadTasks();
@@ -34,5 +38,45 @@ export class TaskListComponent implements OnInit {
           console.error('Error loading tasks:', error);
         }
       });
+  }
+
+  editTask(taskId: number | null): void {
+    if (taskId === null) {
+      console.error('Cannot edit task: Invalid task ID');
+      return;
+    }
+    this.router.navigate(['/tasks/edit', taskId]);
+  }
+
+  deleteTask(taskId: number | null): void {
+    if (taskId === null) {
+      console.error('Cannot delete task: Invalid task ID');
+      return;
+    }
+    
+    if (confirm('Are you sure you want to delete this task?')) {
+      this.taskService.deleteTask(taskId).subscribe({
+        next: () => {
+          this.loadTasks(); // Reload the tasks after deletion
+        },
+        error: (error) => {
+          this.error = `Error deleting task: ${error.message || 'Please try again later.'}`;
+          console.error('Error deleting task:', error);
+        }
+      });
+    }
+  }
+
+  assignTask(taskId: number | null): void {
+    if (taskId === null) {
+      console.error('Cannot assign task: Invalid task ID');
+      return;
+    }
+    // TODO: Implement assign functionality
+    console.log('Assign task:', taskId);
+  }
+
+  createTask(): void {
+    this.router.navigate(['/tasks/create']);
   }
 }
