@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\SelmeciS\\Downloads\\kliens-feleves\\KF-AQC0F2-2024-05-1\\backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4E38F066-CF32-4FFB-B687-785EB4428930}|TrelloCopy\\TrelloCopy.csproj|c:\\users\\selmecis\\downloads\\kliens-feleves\\kf-aqc0f2-2024-05-1\\backend\\trellocopy\\models\\trellotask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E38F066-CF32-4FFB-B687-785EB4428930}|TrelloCopy\\TrelloCopy.csproj|solutionrelative:trellocopy\\models\\trellotask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4E38F066-CF32-4FFB-B687-785EB4428930}|TrelloCopy\\TrelloCopy.csproj|c:\\users\\selmecis\\downloads\\kliens-feleves\\kf-aqc0f2-2024-05-1\\backend\\trellocopy\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E38F066-CF32-4FFB-B687-785EB4428930}|TrelloCopy\\TrelloCopy.csproj|solutionrelative:trellocopy\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -19,6 +23,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "TrelloTask.cs",
+              "DocumentMoniker": "C:\\Users\\SelmeciS\\Downloads\\kliens-feleves\\KF-AQC0F2-2024-05-1\\backend\\TrelloCopy\\Models\\TrelloTask.cs",
+              "RelativeDocumentMoniker": "TrelloCopy\\Models\\TrelloTask.cs",
+              "ToolTip": "C:\\Users\\SelmeciS\\Downloads\\kliens-feleves\\KF-AQC0F2-2024-05-1\\backend\\TrelloCopy\\Models\\TrelloTask.cs",
+              "RelativeToolTip": "TrelloCopy\\Models\\TrelloTask.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T19:31:33.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "TaskController.cs",
               "DocumentMoniker": "C:\\Users\\SelmeciS\\Downloads\\kliens-feleves\\KF-AQC0F2-2024-05-1\\backend\\TrelloCopy\\Controllers\\TaskController.cs",
               "RelativeDocumentMoniker": "TrelloCopy\\Controllers\\TaskController.cs",
