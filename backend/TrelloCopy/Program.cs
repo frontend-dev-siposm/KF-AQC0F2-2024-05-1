@@ -42,11 +42,21 @@ builder.Services.AddAuthentication().AddFacebook(opt =>
 
 
 builder.Services.AddTransient<IEmailSender, EmailSender>();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowLocalhost", policy =>
+    {
+        policy.WithOrigins("http://localhost:4200")  // Allow requests from Angular app
+              .AllowAnyHeader()
+              .AllowAnyMethod()
+              .AllowCredentials();
+    });
+});
 
 builder.Services.AddControllers();
 
 var app = builder.Build();
-
+app.UseCors("AllowLocalhost");
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

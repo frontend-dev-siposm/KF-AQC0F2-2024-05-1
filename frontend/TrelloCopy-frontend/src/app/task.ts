@@ -4,6 +4,6 @@ export class Task {
     description: string = ''
     isCompleted: boolean | null = null
     hasOwner: boolean | null = null
-    //Owner
+    owner: string = ''
     projectId: number | null = null
 }
