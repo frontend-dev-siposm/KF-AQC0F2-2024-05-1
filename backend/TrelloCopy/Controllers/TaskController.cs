@@ -23,7 +23,7 @@ namespace TrelloCopy.Controllers
             _TaskRepository = taskRepository;
         }
 
-
+        [Authorize]
         [HttpGet]
         public ActionResult<IEnumerable<TrelloTask>> GetTasks()
         {

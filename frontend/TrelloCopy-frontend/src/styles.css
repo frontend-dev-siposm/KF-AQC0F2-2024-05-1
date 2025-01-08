@@ -1,4 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
 /* Change the background and border color of primary buttons */
 .btn-primary {
     background-color: blueviolet; /* Custom green background */
@@ -6,12 +11,33 @@
     color: white;             /* Text color */
 }
 
-/* Change the hover state */
-.btn-primary:hover,
+/* Change hover state */
+.btn-primary:hover {
+    background-color: white;
+    border-color: blueviolet;
+    color: blueviolet;
+}
+
+/* Change active state */
+.btn-primary:active {
+    background-color: blueviolet !important;
+    border-color: white !important;
+    color: white !important;
+}
+
+/* Handle focus states */
+.btn-primary:focus-visible {
+    background-color: blueviolet;
+    border-color: blueviolet;
+    color: white;
+    box-shadow: 0 0 0 0.25rem rgba(138, 43, 226, 0.25);
+}
+
 .btn-primary:focus {
-    background-color: white; /* Darker green for hover */
-    border-color: blueviolet;     /* Match border with background */
-    color: blueviolet;              /* Text color on hover */
+    background-color: blueviolet;
+    border-color: blueviolet;
+    color: white;
+    box-shadow: none;
 }
 
 .btn [class^="bi "],
@@ -19,4 +45,15 @@
 .btn [class*=" bi "],
 .nav [class*=" bi "] {
   line-height: 0.10em;
+}
+
+
+#router-outlet-container{
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    width: 80vw;
+    height: 100vw;
+    background-color: blueviolet;
+    color: white;
 }
