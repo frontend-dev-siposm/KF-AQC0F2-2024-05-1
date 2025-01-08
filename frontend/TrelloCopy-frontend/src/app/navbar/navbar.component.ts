@@ -8,12 +8,13 @@ import { AuthService } from '../auth/auth.service';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
-  public currentUserEmail$ = this.authService.currentUserEmail$;
-
+  
   constructor(
     private authService: AuthService,
     private router: Router
   ) {}
+
+  public currentUserEmail$ = this.authService.currentUserEmail$;
 
   public get isAuthenticated(): boolean {
     return this.authService.isAuthenticated();
