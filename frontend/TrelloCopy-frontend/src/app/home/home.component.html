@@ -1,0 +1,8 @@
+<ng-container *ngIf="!isAuthenticated">
+    <h1>Please <a routerLink="/login">login</a> to continue</h1>
+  </ng-container>
+
+  <ng-container *ngIf="isAuthenticated">
+    <h1>Hello, {{ currentUserEmail$ | async }}</h1>
+    <p>Congratulations! Your app is running. 🎉</p>
+  </ng-container>
