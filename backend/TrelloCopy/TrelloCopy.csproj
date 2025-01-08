@@ -10,6 +10,7 @@
   <ItemGroup>
     <PackageReference Include="LiteDB" Version="5.0.20" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.Facebook" Version="8.0.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.0.2" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.4" />
