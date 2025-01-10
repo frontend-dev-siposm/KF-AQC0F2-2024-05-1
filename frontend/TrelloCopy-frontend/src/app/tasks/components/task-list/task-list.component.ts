@@ -40,7 +40,7 @@ export class TaskListComponent implements OnInit {
       });
   }
 
-  editTask(taskId: number | null): void {
+  editTask(taskId: number | null | undefined): void {
     if (taskId === null) {
       console.error('Cannot edit task: Invalid task ID');
       return;
@@ -48,8 +48,8 @@ export class TaskListComponent implements OnInit {
     this.router.navigate(['/tasks/edit', taskId]);
   }
 
-  deleteTask(taskId: number | null): void {
-    if (taskId === null) {
+  deleteTask(taskId: number | null | undefined): void {
+    if (!taskId) {
       console.error('Cannot delete task: Invalid task ID');
       return;
     }
@@ -67,7 +67,7 @@ export class TaskListComponent implements OnInit {
     }
   }
 
-  assignTask(taskId: number | null): void {
+  assignTask(taskId: number | null | undefined): void {
     if (taskId === null) {
       console.error('Cannot assign task: Invalid task ID');
       return;

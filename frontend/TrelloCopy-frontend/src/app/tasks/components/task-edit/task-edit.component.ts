@@ -2,7 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Task } from '../../../task';
 import { TaskService } from '../../../task.service';
+import { ProjectService } from '../../../project.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import { Project } from '../../../project';
 
 @Component({
   selector: 'app-task-edit',
@@ -12,18 +14,19 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class TaskEditComponent implements OnInit {
   taskForm: FormGroup;
   taskId: number | null = null;
-  projects: { id: number; name: string; }[] = []; // This will be populated when project component is implemented
+  projects: Project[] = [];
 
   constructor(
     private fb: FormBuilder,
     private taskService: TaskService,
     private route: ActivatedRoute,
-    private router: Router
+    private router: Router,
+    private projectService: ProjectService
   ) {
     this.taskForm = this.fb.group({
       name: ['', Validators.required],
       description: [''],
-      projectId: [null],
+      projectId: [null, Validators.required],
       isCompleted: [false]
     });
   }
@@ -35,6 +38,15 @@ export class TaskEditComponent implements OnInit {
       this.taskId = +id;
       this.loadTask(this.taskId);
     }
+
+    // Load all projects
+    this.loadProjects();
+  }
+
+  loadProjects(): void {
+    this.projectService.getProjects().subscribe(projects => {
+      this.projects = projects;
+    });
   }
 
   loadTask(id: number): void {
@@ -56,7 +68,7 @@ export class TaskEditComponent implements OnInit {
         description: this.taskForm.value.description,
         projectId: this.taskForm.value.projectId,
         isCompleted: this.taskForm.value.isCompleted,
-        hasOwner: null,
+        hasOwner: false,
         owner: ''
       };
 

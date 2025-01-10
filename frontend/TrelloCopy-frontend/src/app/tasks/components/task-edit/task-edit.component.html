@@ -30,12 +30,16 @@
       <select 
         class="form-select" 
         id="projectId" 
-        formControlName="projectId">
+        formControlName="projectId"
+        required>
         <option value="">Select a project</option>
         <option *ngFor="let project of projects" [value]="project.id">
           {{ project.name }}
         </option>
       </select>
+      <div *ngIf="taskForm.get('projectId')?.invalid && taskForm.get('projectId')?.touched" class="text-danger">
+        Project selection is required
+      </div>
     </div>
 
     <div class="mb-3 form-check">
