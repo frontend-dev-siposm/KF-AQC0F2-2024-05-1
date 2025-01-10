@@ -26,7 +26,7 @@ export class TaskEditComponent implements OnInit {
     this.taskForm = this.fb.group({
       name: ['', Validators.required],
       description: [''],
-      projectId: [null, Validators.required],
+      projectId: [ Validators.required],
       isCompleted: [false]
     });
   }
