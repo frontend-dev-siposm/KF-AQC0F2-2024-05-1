@@ -1,0 +1,40 @@
+.project-status-container {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container {
+  width: 100%;
+  height: 500px;
+  overflow: visible;
+}
+
+.chart-container text {
+  fill: black;
+  font-size: 12px;
+}
+
+.x-axis-label text {
+  font-weight: bold;
+}
+
+.bar:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Additional styles for the home page */
+h1 {
+  margin-bottom: 1.5rem;
+}
+
+.container {
+  max-width: 1200px;
+}
