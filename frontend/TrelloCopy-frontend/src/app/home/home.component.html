@@ -4,5 +4,10 @@
 
   <ng-container *ngIf="isAuthenticated">
     <h1>Hello, {{ currentUserEmail$ | async }}</h1>
-    <p>Congratulations! Your app is running. 🎉</p>
+    <div class="container mt-4">
+      <div class="project-status-container">
+        <h3>Project Completion Status</h3>
+        <div #chartContainer class="chart-container"></div>
+      </div>
+    </div>
   </ng-container>
