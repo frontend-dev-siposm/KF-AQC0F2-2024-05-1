@@ -30,4 +30,12 @@ export class TaskService {
   deleteTask(id: number): Observable<void> {
     return this.http.delete<void>(`${this.apiUrl}/${id}`);
   }
+  
+  assignTask(id: number): Observable<void> {
+    return this.http.post<void>(`${this.apiUrl}/${id}/assign`, {});
+  }
+
+  detachTask(id: number): Observable<void> {
+    return this.http.post<void>(`${this.apiUrl}/${id}/detach`, {});
+  }
 }

@@ -20,6 +20,11 @@
         <div class="card-body">
           <h5 class="card-title">{{ task.name }}</h5>
           <p class="card-text">{{ task.description }}</p>
+          <p class="card-text" *ngIf="task.hasOwner">
+            <small class="text-muted">
+              <i class="bi bi-person"></i> Assigned to: {{ task.owner }}
+            </small>
+          </p>
           <p class="card-text">
             <small [class]="task.isCompleted ? 'text-success' : 'text-warning'">
               <i [class]="task.isCompleted ? 'bi bi-check-circle-fill' : 'bi bi-clock'"></i>
@@ -39,10 +44,17 @@
                     [disabled]="!task.id">
               <i class="bi bi-trash"></i> Delete
             </button>
-            <button class="btn btn-outline-success" 
+            <button *ngIf="!task.hasOwner" 
+                    class="btn btn-outline-success" 
                     (click)="assignTask(task.id)"
                     [disabled]="!task.id">
               <i class="bi bi-person-plus"></i> Assign
+            </button>
+            <button *ngIf="task.hasOwner" 
+                    class="btn btn-outline-warning" 
+                    (click)="detachTask(task.id)"
+                    [disabled]="!task.id">
+              <i class="bi bi-person-dash"></i> Detach
             </button>
           </div>
         </div>
