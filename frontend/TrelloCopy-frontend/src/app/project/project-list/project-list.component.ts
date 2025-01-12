@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { Project } from '../../../app/project';
 import { ProjectService } from '../../../app/project.service';
 
@@ -14,7 +14,8 @@ export class ProjectListComponent implements OnInit {
 
   constructor(
     private projectService: ProjectService,
-    private router: Router
+    private router: Router,
+    private route: ActivatedRoute
   ) { }
 
   ngOnInit(): void {
@@ -45,7 +46,7 @@ export class ProjectListComponent implements OnInit {
       console.error('Cannot edit project: Invalid project ID');
       return;
     }
-    this.router.navigate(['/projects/edit', projectId]);
+    this.router.navigate([`/projects/edit/${projectId}`]);
   }
 
   deleteProject(projectId: number | null | undefined): void {
@@ -68,6 +69,15 @@ export class ProjectListComponent implements OnInit {
   }
 
   createProject(): void {
-    this.router.navigate(['/projects/create']);
+    this.router.navigate([`/projects/create`]);
+  }
+
+  viewTasks(projectId: number | null | undefined): void {
+    if (!projectId) {
+      console.error('Cannot view tasks: Invalid project ID');
+      return;
+    }
+    console.log('Navigating to tasks for project:', projectId);
+    this.router.navigate([`/projects/${projectId}/tasks`]);
   }
 }

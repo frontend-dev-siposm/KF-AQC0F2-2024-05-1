@@ -1,0 +1,27 @@
+<div class="container mt-4">
+  <div class="project-tasks-container">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <button class="btn btn-outline-secondary" (click)="goBack()">
+        <i class="bi bi-arrow-left"></i> Back to Projects
+      </button>
+    </div>
+    <div *ngIf="project" class="mb-4">
+      <h2>{{ project.name }} - Tasks</h2>
+      <div class="task-list">
+        <div *ngFor="let task of tasks" class="task-item">
+          <div class="d-flex align-items-center">
+            <input type="checkbox" [checked]="task.isCompleted" disabled>
+            <span class="ms-2">{{ task.name }}</span>
+          </div>
+          <p class="text-muted mb-0 mt-1">{{ task.description }}</p>
+        </div>
+        <div *ngIf="tasks.length === 0" class="no-tasks">
+          No tasks found for this project.
+        </div>
+      </div>
+    </div>
+    <div *ngIf="!project" class="alert alert-warning">
+      Loading project details...
+    </div>
+  </div>
+</div>
