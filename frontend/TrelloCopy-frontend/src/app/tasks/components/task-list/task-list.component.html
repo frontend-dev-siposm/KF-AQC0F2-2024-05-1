@@ -22,7 +22,7 @@
           <p class="card-text">{{ task.description }}</p>
           <p class="card-text" *ngIf="task.hasOwner">
             <small class="text-muted">
-              <i class="bi bi-person"></i> Assigned to: {{ task.owner }}
+              <i class="bi bi-person"></i> Assigned to: {{ task.ownerEmail }}
             </small>
           </p>
           <p class="card-text">

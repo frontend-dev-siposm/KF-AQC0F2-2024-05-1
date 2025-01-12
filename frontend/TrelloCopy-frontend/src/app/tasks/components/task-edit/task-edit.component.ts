@@ -69,7 +69,8 @@ export class TaskEditComponent implements OnInit {
         projectId: this.taskForm.value.projectId,
         isCompleted: this.taskForm.value.isCompleted,
         hasOwner: false,
-        owner: ''
+        owner: '',
+        ownerEmail: ''
       };
 
       if (this.taskId) {

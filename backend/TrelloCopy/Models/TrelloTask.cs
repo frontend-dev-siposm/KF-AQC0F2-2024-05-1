@@ -1,4 +1,4 @@
-﻿using LiteDB;
+﻿﻿﻿﻿using LiteDB;
 using System.ComponentModel.DataAnnotations;
 
 namespace TrelloCopy.Models
@@ -14,6 +14,7 @@ namespace TrelloCopy.Models
         public bool IsCompleted { get; set; } = false;
         public bool HasOwner { get; set; } = false;
         public string? Owner { get; set; }
+        public string? OwnerEmail { get; set; }
         [Required]
         public int ProjectId { get; set; }
 

@@ -59,7 +59,8 @@ export class TaskCreateComponent implements OnInit {
         projectId: Number(this.taskForm.value.projectId), // Ensure projectId is a number
         isCompleted: this.taskForm.value.isCompleted,
         hasOwner: false,
-        owner: ''
+        owner: '',
+        ownerEmail: ''
       };
 
       this.taskService.createTask(task).subscribe(() => {
