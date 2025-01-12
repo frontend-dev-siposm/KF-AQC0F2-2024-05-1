@@ -13,6 +13,7 @@ import { Project } from '../../project';
 export class ProjectTasksComponent implements OnInit {
   project: Project | null = null;
   tasks: Task[] = [];
+  error: string | null = null;
 
   constructor(
     private route: ActivatedRoute,
@@ -22,47 +23,107 @@ export class ProjectTasksComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    console.log('ProjectTasksComponent initialized');
     this.route.paramMap.subscribe(params => {
-      console.log('Route params:', params);
       const projectIdParam = params.get('id');
-      console.log('Project ID param:', projectIdParam);
       
       if (projectIdParam) {
         const projectId = parseInt(projectIdParam, 10);
-        console.log('Parsed project ID:', projectId);
-        
         this.projectService.getProject(projectId).subscribe({
           next: (project) => {
-            console.log('Loaded project:', project);
             this.project = project;
             this.loadTasks(projectId);
           },
           error: (error) => {
+            this.error = 'Error loading project details';
             console.error('Error loading project:', error);
           }
         });
       } else {
-        console.error('No project ID provided in route');
+        this.error = 'No project ID provided';
       }
     });
   }
 
   private loadTasks(projectId: number) {
-    console.log('Loading tasks for project:', projectId);
     this.taskService.getTasks().subscribe({
       next: (tasks) => {
-        console.log('All tasks:', tasks);
         this.tasks = tasks.filter(task => task.projectId === projectId);
-        console.log('Filtered tasks:', this.tasks);
       },
       error: (error) => {
+        this.error = 'Error loading tasks';
         console.error('Error loading tasks:', error);
       }
     });
   }
 
+  createTask(): void {
+    if (this.project?.id) {
+      this.router.navigate(['/tasks/create'], {
+        queryParams: { projectId: this.project.id }
+      });
+    }
+  }
+
+  editTask(taskId: number | null | undefined): void {
+    if (taskId) {
+      this.router.navigate(['/tasks/edit', taskId]);
+    }
+  }
+
+  deleteTask(taskId: number | null | undefined): void {
+    if (taskId && confirm('Are you sure you want to delete this task?')) {
+      this.taskService.deleteTask(taskId).subscribe({
+        next: () => {
+          if (this.project?.id) {
+            this.loadTasks(this.project.id);
+          }
+        },
+        error: (error) => {
+          this.error = 'Error deleting task';
+          console.error('Error deleting task:', error);
+        }
+      });
+    }
+  }
+
+  assignTask(taskId: number | null | undefined): void {
+    if (taskId) {
+      this.taskService.assignTask(taskId).subscribe({
+        next: () => {
+          if (this.project?.id) {
+            this.loadTasks(this.project.id);
+          }
+        },
+        error: (error) => {
+          this.error = 'Error assigning task';
+          console.error('Error assigning task:', error);
+        }
+      });
+    }
+  }
+
+  detachTask(taskId: number | null | undefined): void {
+    if (taskId) {
+      this.taskService.detachTask(taskId).subscribe({
+        next: () => {
+          if (this.project?.id) {
+            this.loadTasks(this.project.id);
+          }
+        },
+        error: (error) => {
+          this.error = 'Error detaching task';
+          console.error('Error detaching task:', error);
+        }
+      });
+    }
+  }
+
   goBack(): void {
     this.router.navigate(['/projects/list']);
+  }
+
+  // Helper method to check if task ID is valid
+  isValidTaskId(taskId: number | null | undefined): boolean {
+    return taskId !== null && taskId !== undefined;
   }
 }

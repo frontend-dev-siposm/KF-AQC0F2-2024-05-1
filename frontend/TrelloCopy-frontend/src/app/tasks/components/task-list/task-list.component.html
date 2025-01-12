@@ -34,24 +34,24 @@
         </div>
         <div class="card-footer bg-transparent">
           <div class="btn-group w-100">
-            <button class="btn btn-outline-primary" 
+            <button class="btn btn-outline-primary  btn-sm" 
                     (click)="editTask(task.id)" 
                     [disabled]="!task.id">
               <i class="bi bi-pencil-square"></i> Edit
             </button>
-            <button class="btn btn-outline-danger" 
+            <button class="btn btn-outline-danger btn-sm" 
                     (click)="deleteTask(task.id)"
                     [disabled]="!task.id">
               <i class="bi bi-trash"></i> Delete
             </button>
             <button *ngIf="!task.hasOwner" 
-                    class="btn btn-outline-success" 
+                    class="btn btn-outline-success  btn-sm" 
                     (click)="assignTask(task.id)"
                     [disabled]="!task.id">
               <i class="bi bi-person-plus"></i> Assign
             </button>
             <button *ngIf="task.hasOwner" 
-                    class="btn btn-outline-warning" 
+                    class="btn btn-outline-warning  btn-sm" 
                     (click)="detachTask(task.id)"
                     [disabled]="!task.id">
               <i class="bi bi-person-dash"></i> Detach
