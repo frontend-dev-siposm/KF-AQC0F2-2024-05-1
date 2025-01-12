@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\SelmeciS\\Downloads\\kliens-feleves\\KF-AQC0F2-2024-05-1\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4E38F066-CF32-4FFB-B687-785EB4428930}|TrelloCopy\\TrelloCopy.csproj|c:\\users\\selmecis\\downloads\\kliens-feleves\\kf-aqc0f2-2024-05-1\\backend\\trellocopy\\data\\taskrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E38F066-CF32-4FFB-B687-785EB4428930}|TrelloCopy\\TrelloCopy.csproj|solutionrelative:trellocopy\\data\\taskrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4E38F066-CF32-4FFB-B687-785EB4428930}|TrelloCopy\\TrelloCopy.csproj|c:\\users\\selmecis\\downloads\\kliens-feleves\\kf-aqc0f2-2024-05-1\\backend\\trellocopy\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E38F066-CF32-4FFB-B687-785EB4428930}|TrelloCopy\\TrelloCopy.csproj|solutionrelative:trellocopy\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4E38F066-CF32-4FFB-B687-785EB4428930}|TrelloCopy\\TrelloCopy.csproj|c:\\users\\selmecis\\downloads\\kliens-feleves\\kf-aqc0f2-2024-05-1\\backend\\trellocopy\\models\\trellotask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E38F066-CF32-4FFB-B687-785EB4428930}|TrelloCopy\\TrelloCopy.csproj|solutionrelative:trellocopy\\models\\trellotask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E38F066-CF32-4FFB-B687-785EB4428930}|TrelloCopy\\TrelloCopy.csproj|c:\\users\\selmecis\\downloads\\kliens-feleves\\kf-aqc0f2-2024-05-1\\backend\\trellocopy\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E38F066-CF32-4FFB-B687-785EB4428930}|TrelloCopy\\TrelloCopy.csproj|solutionrelative:trellocopy\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4E38F066-CF32-4FFB-B687-785EB4428930}|TrelloCopy\\TrelloCopy.csproj|c:\\users\\selmecis\\downloads\\kliens-feleves\\kf-aqc0f2-2024-05-1\\backend\\trellocopy\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E38F066-CF32-4FFB-B687-785EB4428930}|TrelloCopy\\TrelloCopy.csproj|solutionrelative:trellocopy\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E38F066-CF32-4FFB-B687-785EB4428930}|TrelloCopy\\TrelloCopy.csproj|c:\\users\\selmecis\\downloads\\kliens-feleves\\kf-aqc0f2-2024-05-1\\backend\\trellocopy\\data\\taskrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E38F066-CF32-4FFB-B687-785EB4428930}|TrelloCopy\\TrelloCopy.csproj|solutionrelative:trellocopy\\data\\taskrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4E38F066-CF32-4FFB-B687-785EB4428930}|TrelloCopy\\TrelloCopy.csproj|c:\\users\\selmecis\\downloads\\kliens-feleves\\kf-aqc0f2-2024-05-1\\backend\\trellocopy\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,24 +42,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\SelmeciS\\Downloads\\kliens-feleves\\KF-AQC0F2-2024-05-1\\backend\\TrelloCopy\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "TrelloCopy\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\SelmeciS\\Downloads\\kliens-feleves\\KF-AQC0F2-2024-05-1\\backend\\TrelloCopy\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "TrelloCopy\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAwwFAAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T19:31:30.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "TaskRepository.cs",
               "DocumentMoniker": "C:\\Users\\SelmeciS\\Downloads\\kliens-feleves\\KF-AQC0F2-2024-05-1\\backend\\TrelloCopy\\Data\\TaskRepository.cs",
               "RelativeDocumentMoniker": "TrelloCopy\\Data\\TaskRepository.cs",
               "ToolTip": "C:\\Users\\SelmeciS\\Downloads\\kliens-feleves\\KF-AQC0F2-2024-05-1\\backend\\TrelloCopy\\Data\\TaskRepository.cs",
               "RelativeToolTip": "TrelloCopy\\Data\\TaskRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA2AAAA",
+              "ViewState": "AQIAACsAAAAAAAAAAAAuwAgAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-10T17:16:43.62Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "TrelloProject.cs",
               "DocumentMoniker": "C:\\Users\\SelmeciS\\Downloads\\kliens-feleves\\KF-AQC0F2-2024-05-1\\backend\\TrelloCopy\\Models\\TrelloProject.cs",
               "RelativeDocumentMoniker": "TrelloCopy\\Models\\TrelloProject.cs",
@@ -68,7 +85,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ProjecTaskViewModel.cs",
               "DocumentMoniker": "C:\\Users\\SelmeciS\\Downloads\\kliens-feleves\\KF-AQC0F2-2024-05-1\\backend\\TrelloCopy\\Models\\ProjecTaskViewModel.cs",
               "RelativeDocumentMoniker": "TrelloCopy\\Models\\ProjecTaskViewModel.cs",
@@ -81,7 +98,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ProjectController.cs",
               "DocumentMoniker": "C:\\Users\\SelmeciS\\Downloads\\kliens-feleves\\KF-AQC0F2-2024-05-1\\backend\\TrelloCopy\\Controllers\\ProjectController.cs",
               "RelativeDocumentMoniker": "TrelloCopy\\Controllers\\ProjectController.cs",
@@ -94,20 +111,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "TaskController.cs",
               "DocumentMoniker": "C:\\Users\\SelmeciS\\Downloads\\kliens-feleves\\KF-AQC0F2-2024-05-1\\backend\\TrelloCopy\\Controllers\\TaskController.cs",
               "RelativeDocumentMoniker": "TrelloCopy\\Controllers\\TaskController.cs",
               "ToolTip": "C:\\Users\\SelmeciS\\Downloads\\kliens-feleves\\KF-AQC0F2-2024-05-1\\backend\\TrelloCopy\\Controllers\\TaskController.cs",
               "RelativeToolTip": "TrelloCopy\\Controllers\\TaskController.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAkwCoAAABBAAAA",
+              "ViewState": "AQIAAF8AAAAAAAAAAAA9wGoAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-05T16:49:02.142Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\SelmeciS\\Downloads\\kliens-feleves\\KF-AQC0F2-2024-05-1\\backend\\TrelloCopy\\Program.cs",
               "RelativeDocumentMoniker": "TrelloCopy\\Program.cs",
@@ -126,7 +143,7 @@
               "RelativeDocumentMoniker": "TrelloCopy\\Models\\TrelloTask.cs",
               "ToolTip": "C:\\Users\\SelmeciS\\Downloads\\kliens-feleves\\KF-AQC0F2-2024-05-1\\backend\\TrelloCopy\\Models\\TrelloTask.cs",
               "RelativeToolTip": "TrelloCopy\\Models\\TrelloTask.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAxwBEAAAAnAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAxwA8AAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-07T19:31:33.549Z",
               "EditorCaption": ""

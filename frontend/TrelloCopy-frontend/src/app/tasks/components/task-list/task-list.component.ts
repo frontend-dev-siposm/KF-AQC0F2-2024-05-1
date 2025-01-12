@@ -68,12 +68,36 @@ export class TaskListComponent implements OnInit {
   }
 
   assignTask(taskId: number | null | undefined): void {
-    if (taskId === null) {
+    if (!taskId) {
       console.error('Cannot assign task: Invalid task ID');
       return;
     }
-    // TODO: Implement assign functionality
-    console.log('Assign task:', taskId);
+
+    this.taskService.assignTask(taskId).subscribe({
+      next: () => {
+        this.loadTasks();
+      },
+      error: (error) => {
+        this.error = `Error assigning task: ${error.message || 'Please try again later.'}`;
+        console.error('Error assigning task:', error);
+      }
+    });
+  }
+  detachTask(taskId: number | null | undefined): void {
+    if (!taskId) {
+      console.error('Cannot detach task: Invalid task ID');
+      return;
+    }
+
+    this.taskService.detachTask(taskId).subscribe({
+      next: () => {
+        this.loadTasks();
+      },
+      error: (error) => {
+        this.error = `Error detaching task: ${error.message || 'Please try again later.'}`;
+        console.error('Error detaching task:', error);
+      }
+    });
   }
 
   createTask(): void {

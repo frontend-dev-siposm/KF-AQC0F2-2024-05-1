@@ -5,5 +5,6 @@ export class Task {
     isCompleted: boolean | null = null;
     hasOwner: boolean | null = null;
     owner: string = '';
+    ownerEmail: string = '';
     projectId: number | null = null;
 }
