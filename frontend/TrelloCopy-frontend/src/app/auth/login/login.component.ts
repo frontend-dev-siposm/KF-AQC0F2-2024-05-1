@@ -28,7 +28,7 @@ export class LoginComponent {
       this.authService.login(this.loginForm.value).subscribe({
         next: (response) => {
           if (response.success) {
-            this.router.navigate(['/tasks']);
+            this.router.navigate(['/home']);
           } else {
             this.error = response.message || 'Login failed';
           }
