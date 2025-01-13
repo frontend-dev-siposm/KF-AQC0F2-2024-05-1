@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\SelmeciS\\Downloads\\kliens-feleves\\KF-AQC0F2-2024-05-1\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4E38F066-CF32-4FFB-B687-785EB4428930}|TrelloCopy\\TrelloCopy.csproj|c:\\users\\selmecis\\downloads\\kliens-feleves\\kf-aqc0f2-2024-05-1\\backend\\trellocopy\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4E38F066-CF32-4FFB-B687-785EB4428930}|TrelloCopy\\TrelloCopy.csproj|solutionrelative:trellocopy\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4E38F066-CF32-4FFB-B687-785EB4428930}|TrelloCopy\\TrelloCopy.csproj|c:\\users\\selmecis\\downloads\\kliens-feleves\\kf-aqc0f2-2024-05-1\\backend\\trellocopy\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E38F066-CF32-4FFB-B687-785EB4428930}|TrelloCopy\\TrelloCopy.csproj|solutionrelative:trellocopy\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E38F066-CF32-4FFB-B687-785EB4428930}|TrelloCopy\\TrelloCopy.csproj|c:\\users\\selmecis\\downloads\\kliens-feleves\\kf-aqc0f2-2024-05-1\\backend\\trellocopy\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4E38F066-CF32-4FFB-B687-785EB4428930}|TrelloCopy\\TrelloCopy.csproj|solutionrelative:trellocopy\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4E38F066-CF32-4FFB-B687-785EB4428930}|TrelloCopy\\TrelloCopy.csproj|c:\\users\\selmecis\\downloads\\kliens-feleves\\kf-aqc0f2-2024-05-1\\backend\\trellocopy\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -54,17 +54,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\SelmeciS\\Downloads\\kliens-feleves\\KF-AQC0F2-2024-05-1\\backend\\TrelloCopy\\appsettings.json",
               "RelativeDocumentMoniker": "TrelloCopy\\appsettings.json",
               "ToolTip": "C:\\Users\\SelmeciS\\Downloads\\kliens-feleves\\KF-AQC0F2-2024-05-1\\backend\\TrelloCopy\\appsettings.json",
               "RelativeToolTip": "TrelloCopy\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAClAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAD5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-01-13T21:29:37.214Z",
               "EditorCaption": ""
@@ -136,13 +136,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\SelmeciS\\Downloads\\kliens-feleves\\KF-AQC0F2-2024-05-1\\backend\\TrelloCopy\\Program.cs",
               "RelativeDocumentMoniker": "TrelloCopy\\Program.cs",
               "ToolTip": "C:\\Users\\SelmeciS\\Downloads\\kliens-feleves\\KF-AQC0F2-2024-05-1\\backend\\TrelloCopy\\Program.cs",
               "RelativeToolTip": "TrelloCopy\\Program.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAwwA4AAAA5AAAA",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAAAE0AAABbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-07T20:11:50.745Z",
               "EditorCaption": ""
