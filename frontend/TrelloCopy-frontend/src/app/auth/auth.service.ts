@@ -25,7 +25,8 @@ export interface AuthResponse {
   providedIn: 'root'
 })
 export class AuthService {
-  private apiUrl = 'https://localhost:7295/api/Auth';
+  private apiUrl = 'https://trellocopy-backand.azurewebsites.net/api/Auth';
+  //private apiUrl = 'https://localhost:7295/api/Auth';
   private tokenSubject = new BehaviorSubject<string | null>(localStorage.getItem('token'));
   private currentUserEmailSubject = new BehaviorSubject<string | null>(null);
   currentUserEmail$ = this.currentUserEmailSubject.asObservable();

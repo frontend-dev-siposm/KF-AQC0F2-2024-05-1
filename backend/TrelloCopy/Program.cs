@@ -75,7 +75,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowLocalhost", policy =>
     {
-        policy.WithOrigins("http://localhost:4200")  // Allow requests from Angular app
+        policy.WithOrigins("https://trellocopy-client.netlify.app","http://localhost:4200")  // Allow requests from Angular app
               .AllowAnyHeader()
               .AllowAnyMethod()
               .AllowCredentials();
@@ -86,6 +86,7 @@ builder.Services.AddControllers();
 
 var app = builder.Build();
 app.UseCors("AllowLocalhost");
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
