@@ -29,6 +29,8 @@ export class HomeComponent implements OnInit {
   private height = 400;
 
   public currentUserEmail$ = this.authService.currentUserEmail$;
+  public selectedProject: Project | null = null;
+  public projectTasks: Task[] = [];
 
   constructor(
     private authService: AuthService,
@@ -117,7 +119,7 @@ export class HomeComponent implements OnInit {
     this.svg.append('g')
       .call(d3.axisLeft(y).ticks(10).tickFormat(d => d + '%'));
 
-    // Create bars with tooltips
+    // Create bars with tooltips and click handlers
     const bars = this.svg.selectAll('.bar')
       .data(this.projectStatuses)
       .enter()
@@ -127,7 +129,8 @@ export class HomeComponent implements OnInit {
       .attr('width', x.bandwidth())
       .attr('y', (d: ProjectStatus) => y(d.completionPercentage))
       .attr('height', (d: ProjectStatus) => this.height - y(d.completionPercentage))
-      .attr('fill', (d: ProjectStatus) => this.getColorByCompletion(d.completionPercentage));
+      .attr('fill', (d: ProjectStatus) => this.getColorByCompletion(d.completionPercentage))
+      .on('click', (event: any, d: ProjectStatus) => this.onProjectClick(d));
 
     // Add tooltips
     bars.append('title')
@@ -149,5 +152,14 @@ export class HomeComponent implements OnInit {
     if (percentage >= 80) return '#28a745'; // Green for high completion
     if (percentage >= 50) return '#ffc107'; // Yellow for medium completion
     return '#dc3545'; // Red for low completion
+  }
+
+  private onProjectClick(projectStatus: ProjectStatus) {
+    this.projectService.getProjects().subscribe(projects => {
+      const project = projects.find(p => p.name === projectStatus.name);
+      if (project && project.id) {
+        this.router.navigate(['/project', project.id, 'tasks']);
+      }
+    });
   }
 }
