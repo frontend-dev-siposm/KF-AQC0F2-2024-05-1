@@ -7,7 +7,8 @@ import { Project } from './project';
   providedIn: 'root'
 })
 export class ProjectService {
-  private apiUrl = 'https://localhost:7295/api/project';
+  private apiUrl = 'https://trellocopy-backand.azurewebsites.net/api/project';
+  //private apiUrl = 'https://localhost:7295/api/project';
 
   constructor(private http: HttpClient) { }
 

@@ -1,17 +1,12 @@
 <nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom box-shadow mb-3">
     <div class="container-fluid">
-        <a class="btn btn-primary me-2" routerLink="/">TrelloCopy</a>
+        <a class="btn btn-primary me-2" routerLink="/home"><i class="bi bi-house"></i> TrelloCopy</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                 aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
             <ul class="navbar-nav flex-grow-1">
-                <li class="nav-item">
-                    <a class="btn btn-primary me-2" routerLink="/home">
-                        <i class="bi bi-house"></i> Home
-                    </a>
-                </li>
                 <li class="nav-item">
                     <a class="btn btn-primary me-2" routerLink="/projects">
                         <i class="bi bi-lightbulb-fill"></i> Projects
@@ -24,6 +19,11 @@
                 </li>
             </ul>
             <ul class="navbar-nav">
+                <li class="nav-item me-2">
+                    <button class="btn btn-outline-secondary" (click)="toggleDarkMode()">
+                        <i class="bi" [ngClass]="isDarkMode ? 'bi-moon-fill' : 'bi-sun-fill'"></i>
+                    </button>
+                </li>
                 <ng-container *ngIf="!isAuthenticated">
                     <li class="nav-item">
                         <a class="btn btn-primary me-2" routerLink="/login">
