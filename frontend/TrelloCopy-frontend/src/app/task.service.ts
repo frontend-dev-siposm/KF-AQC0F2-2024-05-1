@@ -7,8 +7,8 @@ import { Task } from './task';
   providedIn: 'root'
 })
 export class TaskService {
-  private apiUrl = 'https://trellocopy-backand.azurewebsites.net/api/task';
-  //private apiUrl = 'https://localhost:7295/api/task';
+  //private apiUrl = 'https://trellocopy-backand.azurewebsites.net/api/task';
+  private apiUrl = 'https://localhost:7295/api/task';
 
   constructor(private http: HttpClient) { }
 

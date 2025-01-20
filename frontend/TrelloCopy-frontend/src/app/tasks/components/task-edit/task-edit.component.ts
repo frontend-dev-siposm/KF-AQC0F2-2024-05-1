@@ -32,14 +32,13 @@ export class TaskEditComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    // Get task ID from route params
     const id = this.route.snapshot.paramMap.get('id');
     if (id) {
       this.taskId = +id;
       this.loadTask(this.taskId);
     }
 
-    // Load all projects
+
     this.loadProjects();
   }
 
@@ -74,12 +73,10 @@ export class TaskEditComponent implements OnInit {
       };
 
       if (this.taskId) {
-        // Update existing task
         this.taskService.updateTask(this.taskId, task).subscribe(() => {
           this.router.navigate(['/tasks']);
         });
       } else {
-        // Create new task
         this.taskService.createTask(task).subscribe(() => {
           this.router.navigate(['/tasks']);
         });

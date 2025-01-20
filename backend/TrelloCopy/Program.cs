@@ -11,8 +11,8 @@ using TrelloCopy.Services;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-var connectionString = builder.Configuration.GetConnectionString("AzureConnection")
-    ?? builder.Configuration.GetConnectionString("DefaultConnection")
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")
+    
     ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
@@ -75,7 +75,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowLocalhost", policy =>
     {
-        policy.WithOrigins("https://trellocopy-client.netlify.app","http://localhost:4200")  // Allow requests from Angular app
+        policy.WithOrigins("http://localhost:4200", "https://trellocopy-client.netlify.app")  // Allow requests from Angular app
               .AllowAnyHeader()
               .AllowAnyMethod()
               .AllowCredentials();

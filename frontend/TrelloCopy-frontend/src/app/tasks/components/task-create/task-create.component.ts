@@ -32,7 +32,6 @@ export class TaskCreateComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    // Get current project ID from route params
     const projectId = this.route.snapshot.queryParamMap.get('projectId');
     if (projectId) {
       this.currentProjectId = +projectId;
@@ -41,7 +40,6 @@ export class TaskCreateComponent implements OnInit {
       });
     }
 
-    // Load all projects
     this.loadProjects();
   }
 
@@ -56,7 +54,7 @@ export class TaskCreateComponent implements OnInit {
       const task: Task = {
         name: this.taskForm.value.name,
         description: this.taskForm.value.description,
-        projectId: Number(this.taskForm.value.projectId), // Ensure projectId is a number
+        projectId: Number(this.taskForm.value.projectId), 
         isCompleted: this.taskForm.value.isCompleted,
         hasOwner: false,
         owner: '',

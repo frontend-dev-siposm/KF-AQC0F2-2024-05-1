@@ -58,7 +58,7 @@ export class ProjectListComponent implements OnInit {
     if (confirm('Are you sure you want to delete this project?')) {
       this.projectService.deleteProject(projectId).subscribe({
         next: () => {
-          this.loadProjects(); // Reload the projects after deletion
+          this.loadProjects(); 
         },
         error: (error) => {
           this.error = `Error deleting project: ${error.message || 'Please try again later.'}`;

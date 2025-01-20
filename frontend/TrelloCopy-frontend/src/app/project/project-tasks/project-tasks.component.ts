@@ -122,7 +122,7 @@ export class ProjectTasksComponent implements OnInit {
     this.router.navigate(['/projects/list']);
   }
 
-  // Helper method to check if task ID is valid
+
   isValidTaskId(taskId: number | null | undefined): boolean {
     return taskId !== null && taskId !== undefined;
   }
