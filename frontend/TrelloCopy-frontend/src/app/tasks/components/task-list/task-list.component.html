@@ -1,6 +1,13 @@
 <div class="container mt-4">
   <div class="d-flex justify-content-between align-items-center mb-4">
-    <h2 class="mb-0">Tasks</h2>
+    <div class="d-flex align-items-center gap-3">
+      <h2 class="mb-0">Tasks</h2>
+      <select class="form-select" style="width: auto;" [(ngModel)]="selectedFilter">
+        <option value="all">All Tasks</option>
+        <option value="done">Done</option>
+        <option value="in-progress">In Progress</option>
+      </select>
+    </div>
     <button class="btn btn-primary border border-white" (click)="createTask()">
       <i class="bi bi-plus-lg"></i> Create Task
     </button>
@@ -15,7 +22,7 @@
   </div>
 
   <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-    <div *ngFor="let task of tasks" class="col">
+    <div *ngFor="let task of filteredTasks" class="col">
       <div class="card h-100">
         <div class="card-body">
           <h5 class="card-title">{{ task.name }}</h5>

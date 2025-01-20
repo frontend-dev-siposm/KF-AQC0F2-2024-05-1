@@ -1,10 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+
 
 * {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-/* Dark mode styles */
+
 body.dark-mode {
     background-color: #1a1a1a;
     color: #ffffff;
@@ -30,28 +30,34 @@ body.dark-mode .border-bottom {
     border-color: #3d3d3d !important;
 }
 
-/* Change the background and border color of primary buttons */
+
 .btn-primary {
-    background-color: blueviolet; /* Custom green background */
-    border-color: blueviolet;    /* Custom green border */
-    color: white;             /* Text color */
+    background-color: blueviolet;
+    border-color: blueviolet;
+    color: white;
 }
 
-/* Change hover state */
+
 .btn-primary:hover {
     background-color: white;
     border-color: blueviolet;
     color: blueviolet;
 }
 
-/* Change active state */
+
 .btn-primary:active {
     background-color: blueviolet !important;
     border-color: white !important;
     color: white !important;
 }
 
-/* Handle focus states */
+.btn-primary:disabled {
+    background-color: blueviolet !important;
+    border-color: white !important;
+    color: white !important;
+}
+
+
 .btn-primary:focus-visible {
     background-color: blueviolet;
     border-color: blueviolet;

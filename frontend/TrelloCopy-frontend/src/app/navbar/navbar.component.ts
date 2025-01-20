@@ -15,7 +15,6 @@ export class NavbarComponent {
     private authService: AuthService,
     private router: Router
   ) {
-    // Load dark mode preference
     const savedTheme = localStorage.getItem('darkMode');
     if (savedTheme) {
       this.isDarkMode = JSON.parse(savedTheme);

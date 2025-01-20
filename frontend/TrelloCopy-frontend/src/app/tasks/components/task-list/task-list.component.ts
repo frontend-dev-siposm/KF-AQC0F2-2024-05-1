@@ -11,6 +11,18 @@ import { TaskService } from '../../../../app/task.service';
 export class TaskListComponent implements OnInit {
   tasks: Task[] = [];
   error: string = '';
+  selectedFilter: 'all' | 'done' | 'in-progress' = 'all';
+
+  get filteredTasks(): Task[] {
+    switch (this.selectedFilter) {
+      case 'done':
+        return this.tasks.filter(task => task.isCompleted);
+      case 'in-progress':
+        return this.tasks.filter(task => !task.isCompleted);
+      default:
+        return this.tasks;
+    }
+  }
 
   constructor(
     private taskService: TaskService,
@@ -57,7 +69,7 @@ export class TaskListComponent implements OnInit {
     if (confirm('Are you sure you want to delete this task?')) {
       this.taskService.deleteTask(taskId).subscribe({
         next: () => {
-          this.loadTasks(); // Reload the tasks after deletion
+          this.loadTasks(); 
         },
         error: (error) => {
           this.error = `Error deleting task: ${error.message || 'Please try again later.'}`;
