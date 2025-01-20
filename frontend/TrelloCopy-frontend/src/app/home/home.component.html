@@ -1,0 +1,13 @@
+<ng-container *ngIf="!isAuthenticated">
+    <h1>Please <a routerLink="/login">login</a> to continue</h1>
+  </ng-container>
+
+  <ng-container *ngIf="isAuthenticated">
+    <h1>Hello, {{ currentUserEmail$ | async }}</h1>
+    <div class="container mt-4">
+      <div class="project-status-container">
+        <h3>Project Completion Status</h3>
+        <div #chartContainer class="chart-container"></div>
+      </div>
+    </div>
+  </ng-container>

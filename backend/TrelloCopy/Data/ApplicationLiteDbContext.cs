@@ -32,8 +32,12 @@ namespace TrelloCopy.Data
                 var tasks = new List<TrelloTask> {
                  new TrelloTask { Name = "A", Description = "Task 1 for Project A", ProjectId = 1 },
                  new TrelloTask { Name = "B", Description = "Task 2 for Project A", ProjectId = 1 },
-                 new TrelloTask { Name = "C", Description = "Task 1 for Project B" , ProjectId = 2},
-                 new TrelloTask { Name = "D", Description = "Task 2 for Project B" , ProjectId = 2}
+                 new TrelloTask { Name = "C", Description = "Task 3 for Project A", ProjectId = 1 },
+                 new TrelloTask { Name = "D", Description = "Task 4 for Project A", ProjectId = 1 },
+                 new TrelloTask { Name = "E", Description = "Task 1 for Project B" , ProjectId = 2},
+                 new TrelloTask { Name = "F", Description = "Task 2 for Project B" , ProjectId = 2},
+                 new TrelloTask { Name = "G", Description = "Task 3 for Project B" , ProjectId = 2},
+                 new TrelloTask { Name = "H", Description = "Task 4 for Project B" , ProjectId = 2}
             };
 
                 foreach (var task in tasks)

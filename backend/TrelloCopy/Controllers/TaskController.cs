@@ -1,4 +1,4 @@
-﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿using Microsoft.AspNetCore.Authorization;
+﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using TrelloCopy.Data;
@@ -23,7 +23,7 @@ namespace TrelloCopy.Controllers
             _TaskRepository = taskRepository;
         }
 
-
+        [Authorize]
         [HttpGet]
         public ActionResult<IEnumerable<TrelloTask>> GetTasks()
         {
@@ -101,11 +101,15 @@ namespace TrelloCopy.Controllers
                 
             if (task.HasOwner)
                 return BadRequest("Task is already assigned");
-                
-            task.Owner = _userManager.GetUserId(this.User);
+            
+            var currentUser = _userManager.GetUserAsync(User).Result;
+            task.Owner = $"{currentUser.Id}";
+            task.OwnerEmail = $"{currentUser.Email}";
             task.HasOwner = true;
+            _logger.LogInformation($"Assigning task {id} to user {currentUser.Email}");
             _TaskRepository.Update(task);
-            return NoContent();
+            _logger.LogInformation($"Task {id} assigned successfully with email {task.OwnerEmail}");
+            return Ok(task);
         }
         [Authorize]
         [HttpPost("{id}/detach")]
@@ -116,10 +120,12 @@ namespace TrelloCopy.Controllers
                 return NotFound();
 
             var currentUserId = _userManager.GetUserId(this.User);
-            if (task.Owner != currentUserId)
+            var taskOwnerId = task.Owner;
+            if (taskOwnerId != currentUserId)
                 return BadRequest("Only the task owner can detach from it");
 
-            task.Owner = "";
+            task.Owner = null;
+            task.OwnerEmail = null;
             task.HasOwner = false;
             _TaskRepository.Update(task);
             return NoContent();

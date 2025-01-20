@@ -1,4 +1,4 @@
-﻿using TrelloCopy.Models;
+﻿﻿using TrelloCopy.Models;
 
 namespace TrelloCopy.Data
 {
@@ -45,6 +45,7 @@ namespace TrelloCopy.Data
             old.HasOwner = task.HasOwner;
             old.IsCompleted = task.IsCompleted;
             old.Owner = task.Owner;
+            old.OwnerEmail = task.OwnerEmail;
             old.Description = task.Description;
             old.ProjectId = task.ProjectId;
             _context.Tasks.Update(old);

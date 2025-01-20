@@ -569,3 +569,4 @@ C:\Users\SelmeciS\Downloads\kliens-feleves\KF-AQC0F2-2024-05-1\backend\TrelloCop
 C:\Users\SelmeciS\Downloads\kliens-feleves\KF-AQC0F2-2024-05-1\backend\TrelloCopy\obj\Debug\net8.0\TrelloCopy.pdb
 C:\Users\SelmeciS\Downloads\kliens-feleves\KF-AQC0F2-2024-05-1\backend\TrelloCopy\obj\Debug\net8.0\TrelloCopy.genruntimeconfig.cache
 C:\Users\SelmeciS\Downloads\kliens-feleves\KF-AQC0F2-2024-05-1\backend\TrelloCopy\obj\Debug\net8.0\ref\TrelloCopy.dll
+C:\Users\SelmeciS\Downloads\kliens-feleves\KF-AQC0F2-2024-05-1\backend\TrelloCopy\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
